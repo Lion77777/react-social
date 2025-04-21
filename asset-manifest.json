@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-social/static/css/main.88a5de20.css",
+    "main.js": "/react-social/static/js/main.38cd5945.js",
+    "static/js/453.6a2980d5.chunk.js": "/react-social/static/js/453.6a2980d5.chunk.js",
+    "static/media/avatar.png": "/react-social/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/react-social/index.html",
+    "main.88a5de20.css.map": "/react-social/static/css/main.88a5de20.css.map",
+    "main.38cd5945.js.map": "/react-social/static/js/main.38cd5945.js.map",
+    "453.6a2980d5.chunk.js.map": "/react-social/static/js/453.6a2980d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88a5de20.css",
+    "static/js/main.38cd5945.js"
+  ]
+}
