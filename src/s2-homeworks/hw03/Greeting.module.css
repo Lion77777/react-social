@@ -2,34 +2,83 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    gap: 12px;
 }
 
 .error {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CC0000;
+    margin-top: 10px;
 }
 
 .input {
+    height: 36px;
+    width: 372px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
 }
 
 .input:focus {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    border-color: #D1D1D1;
+    outline: none;
 }
 
 .errorInput {
+    height: 36px;
+    width: 372px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    padding: 8px 12px;
 }
 
 .button {
+    width: 78px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0066CC;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0;
+    padding: 8px 24px;
+    text-transform: capitalize;
 }
 
 .button:focus {
+    border: none;
+    border-radius: 3px;
+    background-color: #0066CC;
+    color: #fff;
 }
 
 .button:active {
+    border: none;
+    border-radius: 3px;
+    background-color: #0066CC;
+    color: #fff;
 }
 
 .button:disabled {
+    opacity: 0.5;
 }
 
 .text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    margin-bottom: 9px;
 }
 
 .greeting {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
