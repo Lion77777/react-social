@@ -1,10 +1,26 @@
 .spanBlock {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
 .span {
+    font-size: 16px;
+    color: #0080FF;
+}
+
+.span::first-letter {
+    text-transform: uppercase;
 }
 
 .input {
+    box-sizing: border-box;
+    padding: 8px 0 8px 24px;
+    border: 1px solid #D1D1D1;
+    outline: none;
+    width: 276px;
+    margin: 0 0 16px;
 }
 
 .pen {

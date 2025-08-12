@@ -17,15 +17,21 @@ const HW6 = () => {
     const save = () => {
         saveState<string>('hw6-editable-span-value', value)
     }
+
     const restore = () => {
         // делают студенты
 
+        setValue('')
+
+        const restoredValue = restoreState<string>('hw6-editable-span-value', '')
+
+        setValue(restoredValue)
     }
 
     return (
         <div id={'hw6'}>
             <div className={s2.hwTitle}>Homework #6</div>
-
+        
             {/*демонстрация возможностей компоненты:*/}
             <div className={s2.hw}>
                 <div className={s.editableSpanContainer}>
