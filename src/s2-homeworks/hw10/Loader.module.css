@@ -1,3 +1,32 @@
 .loader {
-    /*свг и/или анимация*/
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+
+  background: conic-gradient(#fff, #512de4);
+
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 9px), black 0);
+          mask: radial-gradient(farthest-side, transparent calc(100% - 9px), black 0);
+
+  animation: spin 1.9s linear infinite;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 5px;       
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 12px;
+  height: 12px;
+  background: #512de4;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+    to{
+      transform: rotate(360deg);
+    }
 }
