@@ -1,14 +1,36 @@
 .buttonsContainer {
+    display: flex;
+    margin-top: 27px;
+    width: 200px;
+    gap: 21px;
+}
+
+.buttonsContainer button {
+    text-transform: capitalize;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    padding: 5px 24px;
+    cursor: pointer;
+}
+
+.buttonsContainer button:disabled {
+    color: #fff;
 }
 
 .clock {
 }
 
 .watch {
+    font-size: 20px;
+    margin-top: 26px;
 }
 
 .watch strong {
 }
 
 .more {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-family: 'Montserrat';
+    margin-top: 8px;
 }
