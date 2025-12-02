@@ -19,5 +19,14 @@ html {
 }
 
 .select {
+    width: 171px;
+    height: 36px;
+    text-transform: capitalize;
+    border: 1px solid #323232 !important;
+    padding: 8px 10px;
+}
 
+.paragraph {
+    font-family: 'Montserrat';
+    margin-bottom: 6px;
 }
