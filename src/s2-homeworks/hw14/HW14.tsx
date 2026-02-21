@@ -39,7 +39,14 @@ const HW14 = () => {
                 // сохранить пришедшие данные
 
                 //
+                
+                if(res) {
+                    setTechs(res.data.techs)
+                    // setFind('')
+                }
             })
+            .finally(() => setLoading(false))
+
     }
 
     const onChangeText = (value: string) => {
@@ -50,6 +57,8 @@ const HW14 = () => {
         // setSearchParams(
 
         //
+
+        setSearchParams(value ? {find: value} : {})
     }
 
     useEffect(() => {
