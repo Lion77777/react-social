@@ -1,11 +1,17 @@
 .pagination {
     display: flex;
+    align-items: center;
+    margin-bottom: 36px;
 }
 
 .text1 {
-
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
 }
 
 .text2 {
-
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 6px;
 }

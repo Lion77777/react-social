@@ -1,27 +1,62 @@
 .tech {
+    font-size: 16px;
+    font-weight: 400;
     width: 50vw;
 }
 
 .developer {
-
+    font-size: 16px;
+    font-weight: 400;
+    width: 50vw;
+    text-transform: capitalize;
 }
 
 .techHeader {
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
     width: 50vw;
 }
 
 .developerHeader {
-
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 50vw;
 }
 
 .row {
+    border-bottom: 1px solid #e5e5e5;
     display: flex;
+    padding: 10px 17px;
+    width: 606px;
 }
 
 .rowHeader {
+    background-color: #e5e5e5;
     display: flex;
+    padding: 10px 17px;
+    width: 606px;
 }
 
 .loading {
+    background-color: #fff;
+    background-image: url('./Loading.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    height: 100%;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
 }

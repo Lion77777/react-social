@@ -42,11 +42,9 @@ const HW14 = () => {
                 
                 if(res) {
                     setTechs(res.data.techs)
-                    // setFind('')
                 }
             })
             .finally(() => setLoading(false))
-
     }
 
     const onChangeText = (value: string) => {

@@ -5,19 +5,34 @@
 }
 
 .users {
+    width: 600px;
+    border-spacing: 0;
 }
 
 .buttonsContainer {
+    margin-bottom: 18px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
 }
 
 .container {
+    width: 600px;
 }
 
 .thead {
+    background-color: #E5E5E5;
+    font-weight: 600;
 }
 
 .nameCol {
+    padding: 10px 17px;
+    border-bottom: 1px solid #E5E5E5;
+    width: 50%;
 }
 
 .ageCol {
+    font-weight: 600;
+    padding: 10px 17px;
+    border-bottom: 1px solid #E5E5E5;
 }

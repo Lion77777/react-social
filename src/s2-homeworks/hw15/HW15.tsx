@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW15.module.css'
 import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
-import {useSearchParams} from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 
 /*
@@ -31,7 +31,7 @@ const getTechs = (params: ParamsType) => {
     return axios
         .get<{ techs: TechType[], totalCount: number }>(
             'https://samurai.it-incubator.io/api/3.0/homework/test3',
-            {params}
+            { params }
         )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)
@@ -56,17 +56,23 @@ const HW15 = () => {
                 // сохранить пришедшие данные
 
                 //
+                if (res) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                }
+            })
+            .finally(() => {
+                setLoading(false)
+                // setSearchParams({page: String(page), count: String(count), sort})
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
+        setPage(newPage)
+        setCount(newCount)
+        sendQuery({ page: newPage, count: newCount, sort })
+        setSearchParams({ page: String(newPage), count: String(newCount), sort })
 
         //
     }
@@ -81,11 +87,16 @@ const HW15 = () => {
         // setSearchParams(
 
         //
+
+        setSort(newSort)
+        setPage(1)
+        sendQuery({ page: 1, count, sort })
+        setSearchParams({ page: '1', count: String(count), sort: sort })
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        sendQuery({page: params.page, count: params.count})
+        sendQuery({ page: params.page, count: params.count })
         setPage(+params.page || 1)
         setCount(+params.count || 4)
     }, [])
@@ -119,12 +130,12 @@ const HW15 = () => {
                 <div className={s.rowHeader}>
                     <div className={s.techHeader}>
                         tech
-                        <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
+                        <SuperSort sort={sort} value={'tech'} onChange={onChangeSort} />
                     </div>
 
                     <div className={s.developerHeader}>
                         developer
-                        <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
+                        <SuperSort sort={sort} value={'developer'} onChange={onChangeSort} />
                     </div>
                 </div>
 
