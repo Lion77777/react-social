@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-social/static/css/main.0158345f.css",
-    "main.js": "/react-social/static/js/main.097adb3d.js",
+    "main.css": "/react-social/static/css/main.67003049.css",
+    "main.js": "/react-social/static/js/main.8818da2b.js",
     "static/js/51.a3f28b91.chunk.js": "/react-social/static/js/51.a3f28b91.chunk.js",
     "static/media/avatar.png": "/react-social/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/react-social/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
@@ -13,12 +13,15 @@
     "static/media/checked.svg": "/react-social/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/react-social/index.html",
     "static/media/burger.svg": "/react-social/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.0158345f.css.map": "/react-social/static/css/main.0158345f.css.map",
-    "main.097adb3d.js.map": "/react-social/static/js/main.097adb3d.js.map",
+    "static/media/DoubleArrow.svg": "/react-social/static/media/DoubleArrow.54a3a87c32b2de73b4558c36e79cac13.svg",
+    "static/media/ArrowDown.svg": "/react-social/static/media/ArrowDown.aa1b56fad8fa8a6a846f2e08bc4695d8.svg",
+    "static/media/ArrowUp.svg": "/react-social/static/media/ArrowUp.32bb057991cd620faba740cc8f41126d.svg",
+    "main.67003049.css.map": "/react-social/static/css/main.67003049.css.map",
+    "main.8818da2b.js.map": "/react-social/static/js/main.8818da2b.js.map",
     "51.a3f28b91.chunk.js.map": "/react-social/static/js/51.a3f28b91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0158345f.css",
-    "static/js/main.097adb3d.js"
+    "static/css/main.67003049.css",
+    "static/js/main.8818da2b.js"
   ]
 }
